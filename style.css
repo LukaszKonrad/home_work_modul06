@@ -96,3 +96,8 @@ body {
     margin-top: 20px;
     margin-left: 10px;
 }
+
+.js-tasks {
+    margin: 0 auto;
+    list-style-type: none;
+}
