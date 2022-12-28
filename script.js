@@ -75,7 +75,7 @@
         event.preventDefault();
   
         const newTask = document.querySelector(".js-newTask")
-    const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
         if (newTaskContent !== ""){
             addNewTask(newTaskContent);
             newTask.value = "";  
