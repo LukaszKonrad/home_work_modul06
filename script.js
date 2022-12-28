@@ -71,26 +71,29 @@
 
     };
 
-
-
     const onFormSubmit = (event) => {
         event.preventDefault();
   
-
+        const newTask = document.querySelector(".js-newTask")
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        if (newTaskContent === ""){
-            return;
+        if (newTaskContent !== ""){
+            addNewTask(newTaskContent);
+            newTask.value = "";  
         };
-
-     addNewTask(newTaskContent) ;
+    newTask.focus() ;
 }
-
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit );
+
+        const element = document.querySelector(".js-newTask")
+
+        if (element === true) {
+            element.innerText = "";
+        } 
     }
     init();
 
