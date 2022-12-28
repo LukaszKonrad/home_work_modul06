@@ -111,4 +111,10 @@ body {
     background-color: white;
     margin: 0 auto;
     justify-content: center;
+    justify-content: space-between;
+}
+.js-remove {
+    background-color: red;
+    text-decoration: none;
+    border-style: none;
 }
