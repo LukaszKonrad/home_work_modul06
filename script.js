@@ -13,7 +13,6 @@
 
     ]
 
-    
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent
@@ -51,15 +50,18 @@
         });
     }
 
-    for (const task of tasks) {
-        htmlString += `
-        <li class="add_task">
-        <button class="js-done">${task.done ? "✔" : ""}</button>
-        <span class="newtask${task.done ? " task--done" : ""}">${task.content}</span>
-        <button class="js-remove">🗑</button>
-        </li>
-        `
-    }
+    const render = () => {
+        let htmlString = ""
+
+        for (const task of tasks) {
+            htmlString += `
+            <li class="add_task">
+            <button class="js-done">${task.done ? "✔" : ""}</button>
+            <span class="newtask${task.done ? " task--done" : ""}">${task.content}</span>
+            <button class="js-remove">🗑</button>
+            </li>
+            `
+        }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
@@ -93,3 +95,4 @@
     init();
 
 }
+cos

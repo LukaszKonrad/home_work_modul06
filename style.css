@@ -143,7 +143,7 @@ body {
 }
 .js-remove {
     font-size: 20px;
-    background-color: blue;
+    background-color: red;
     border-style: none;
     margin: 10px;
     order: 2;
@@ -151,7 +151,6 @@ body {
     height: 30px;
   
 }
-
 .js-done {
     font-size: 20px;
     background-color: green;
@@ -162,3 +161,4 @@ body {
     height: 30px;
   
 }
+/*cos*/
