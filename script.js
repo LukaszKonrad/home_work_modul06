@@ -1,18 +1,13 @@
 {
-
     const tasks = [
         {
-            content: "zadanie1",
+            content: "zadanie_testowe",
             done: false,
         },
         {
-            content: "zadanie2",
-            done: true,
-
         },
 
     ]
-
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent
@@ -65,10 +60,8 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-
         bindEvents();
-
-
+    
     };
 
     const onFormSubmit = (event) => {
