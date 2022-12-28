@@ -31,23 +31,7 @@
         render();
     }
 
-    const render = () => {
-        let htmlString = ""
-
-        for (const task of tasks) {
-            htmlString += `
-            <li
-            ${task.done ? "style=\"text-decoration: line-through\"": ""}>
-
-            
-            <div class="add_task"><button class="js-remove">🗑</button><button class="js-done">✔</button>${task.content}</div>
-            </li>
-            `
-        }
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
-
-
+    bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -65,6 +49,26 @@
             });
 
         });
+    }
+
+    const render = () => {
+        let htmlString = ""
+
+        for (const task of tasks) {
+            htmlString += `
+            <li
+            ${task.done ? "style=\"text-decoration: line-through\"": ""}>
+
+            
+            <div class="add_task"><button class="js-remove">🗑</button><button class="js-done">✔</button>${task.content}</div>
+            </li>
+            `
+        }
+
+        document.querySelector(".js-tasks").innerHTML = htmlString;
+
+
+        bindEvents();
 
 
     };
