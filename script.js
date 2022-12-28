@@ -51,19 +51,15 @@
         });
     }
 
-    const render = () => {
-        let htmlString = ""
-
-        for (const task of tasks) {
-            htmlString += `
-            <li
-            ${task.done ? "style=\"text-decoration: line-through\"": ""}>
-
-            
-            <div class="add_task"><button class="js-remove">🗑</button><button class="js-done">✔</button>${task.content}</div>
-            </li>
-            `
-        }
+    for (const task of tasks) {
+        htmlString += `
+        <li class="add_task">
+        <button class="js-done">${task.done ? "✔" : ""}</button>
+        <span class="newtask${task.done ? " task--done" : ""}">${task.content}</span>
+        <button class="js-remove">🗑</button>
+        </li>
+        `
+    }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 

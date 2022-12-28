@@ -42,6 +42,16 @@ body {
    
 }
 
+.newtask {
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.task--done {
+    text-decoration: line-through;
+}
+
 .button_one {
     flex-basis: 15%;
     height: 35px;
@@ -94,6 +104,17 @@ body {
 
 
 .text_two {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+.js-tasks {
+        padding: 0px;
+        list-style-type: none;
+        
+    }  
+
+.text_two {
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -110,11 +131,34 @@ body {
     max-width: 1000px;
     background-color: white;
     margin: 0 auto;
-    justify-content: center;
     justify-content: space-between;
+    font-size: 25px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: rgb(220, 220, 220);
+    align-items: center;
+    order: 1;
+
+ 
 }
 .js-remove {
-    background-color: red;
-    text-decoration: none;
+    font-size: 20px;
+    background-color: blue;
     border-style: none;
+    margin: 10px;
+    order: 2;
+    width: 30px;
+    height: 30px;
+  
+}
+
+.js-done {
+    font-size: 20px;
+    background-color: green;
+    border-style: none;
+    margin: 10px;
+    order: 0;
+    width: 30px;
+    height: 30px;
+  
 }
