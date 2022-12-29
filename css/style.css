@@ -1,11 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
 .header {
     margin-left: 17%;
 }
+
 .text_one {
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
 }
+
 .main_one {
     display: flex;
     width: 100%;
@@ -14,11 +26,13 @@
     margin: 0px auto;
     border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: rgb(220, 220, 220);;
+    border-color: rgb(220, 220, 220);
+    ;
     background-color: white;
     font-size: 20px;
     font-weight: bold;
 }
+
 .main_two {
     display: flex;
     width: 100%;
@@ -28,13 +42,14 @@
     background-color: white;
     align-items: center;
 }
+
 .js-newTask {
     flex-basis: 85%;
     align-items: center;
     margin: 2%;
     height: 30px;
     border: 2px solid black;
-   
+
 }
 
 .newtask {
@@ -66,13 +81,15 @@
         flex-wrap: wrap;
         height: 120px;
     }
+
     .button_one {
         flex-basis: 100%;
     }
+
     .newTask {
-       margin-left: 6%
+        margin-left: 6%
     }
-    
+
 }
 
 .resultContent_one {
@@ -85,22 +102,12 @@
     margin-top: 10px;
     border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: rgb(220, 220, 220);;
+    border-color: rgb(220, 220, 220);
+    ;
     background-color: white;
     font-size: 20px;
     font-weight: bold;
 }
-
-.text_two {
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-    
-.js-tasks {
-        padding: 0px;
-        list-style-type: none;
-        
-    }  
 
 .text_two {
     margin-top: 20px;
@@ -110,7 +117,18 @@
 .js-tasks {
     padding: 0px;
     list-style-type: none;
-    
+
+}
+
+.text_two {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.js-tasks {
+    padding: 0px;
+    list-style-type: none;
+
 }
 
 .add_task {
@@ -127,8 +145,9 @@
     align-items: center;
     order: 1;
 
- 
+
 }
+
 .js-remove {
     font-size: 20px;
     background-color: red;
@@ -137,8 +156,9 @@
     order: 2;
     width: 30px;
     height: 30px;
-  
+
 }
+
 .js-done {
     font-size: 20px;
     background-color: green;
@@ -148,5 +168,5 @@
     width: 30px;
     height: 30px;
     color: white;
-  
+
 }

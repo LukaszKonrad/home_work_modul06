@@ -1,10 +1,12 @@
 {
     const tasks = [
         {
-            content: "zadanie_testowe",
+            content: "test_task_one",
             done: false,
         },
         {
+            content: "test_task_two",
+            done: true,
         },
 
     ]
@@ -17,7 +19,7 @@
 
     const removeTask = (index) => {
         tasks.splice(index, 1);
-                render();
+        render();
     }
 
     const toggleTaskDone = (index) => {
@@ -61,32 +63,32 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
-    
+
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-  
+
         const newTask = document.querySelector(".js-newTask")
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        if (newTaskContent !== ""){
+        if (newTaskContent !== "") {
             addNewTask(newTaskContent);
-            newTask.value = "";  
+            newTask.value = "";
         };
-    newTask.focus() ;
-}
+        newTask.focus();
+    }
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", onFormSubmit );
+        form.addEventListener("submit", onFormSubmit);
 
         const element = document.querySelector(".js-newTask")
 
         if (element === true) {
             element.innerText = "";
-        } 
+        }
     }
     init();
 
